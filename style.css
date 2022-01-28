@@ -1,6 +1,7 @@
 
 :root {
     --primary-color: #e50914;
+    --dark-color: #141414;
 }
 
 *{
@@ -98,12 +99,29 @@ img{
 }
 
 .showcase-content p{
+    letter-spacing: 6px;
     text-transform: uppercase;
     color: #f8f4f4;
     font-weight: 400;
     font-size: 1.9rem;
     line-height: 1.25;
     margin: 0 0 2rem;
+}
+
+/* Tabs */
+.tabs {
+    background: var(--dark-color);
+    padding-top: 1rem;
+    border-bottom: 3px solid #3D3D3D;
+}
+
+.tabs .container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 /* Buttons */
@@ -132,6 +150,7 @@ img{
 }
 
 .btn-xl{
+    letter-spacing: 6px;
     font-size: 2rem;
     padding: 1.5rem 2.1rem;
     text-transform: uppercase;
@@ -142,5 +161,7 @@ img{
     padding: 0.8rem 1.3rem;
     text-transform: uppercase;
 }
+
+
 
 
