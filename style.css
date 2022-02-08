@@ -124,6 +124,130 @@ img{
     text-align: center;
 }
 
+.tabs p {
+    font-size: 1.2rem;
+    margin-top: 0.2rem;
+}
+
+.tabs .container > div{
+    padding: 1.5rem 0;
+}
+
+.tabs .container > div:hover{
+    color: #f8f4f4;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.tab-border{
+    border-bottom: var(--primary-color) 4px solid;
+}
+
+.tab-content{
+    padding: 3rem 0;
+    background: #000;
+    color: #f8f4f4;
+}
+
+/* Hide content initially */
+#tab-1-content,
+#tab-2-content,
+#tab-3-content {
+    display: none;
+}
+
+.show {
+    display: block !important;
+}
+
+#tab-1-content .tab-1-content-inner{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#tab-2-content .tab-2-content-top{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#tab-2-content .tab-2-content-bottom{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.without{
+    width: 1rem;
+}
+.check{
+    width: 1.2rem;
+}
+
+.table{
+    width: 100%;
+    margin-top: 2rem;
+    border-collapse:collapse;
+    border-spacing: 0;
+}
+
+.table thead th{
+    text-transform: uppercase;
+    padding: 0.8rem;
+    justify-content: flex-end;
+}
+
+.table tbody tr td{
+    color: #999;
+    padding: 0.8rem 1.2rem;
+    text-align: center;
+}
+
+.table tbody tr td:first-child{
+    text-align: left;
+}
+
+.table tbody tr:nth-child(odd){
+    background: #222;
+}
+
+/* Container */
+.container {
+    max-width: 70%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
+}
+
+/* Text Styles */
+.text-xl {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.text-lg{
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-dark{
+    color: #999;
+}
+
 /* Buttons */
 
 .btn{
@@ -146,7 +270,7 @@ img{
 }
 
 .btn-rounded{
-    border-radius: 5px;
+    border-radius: 2px;
 }
 
 .btn-xl{
@@ -163,5 +287,118 @@ img{
 }
 
 
+
+
+/* Footer */
+
+.footer{
+    max-width: 75%;
+    margin: 1rem auto;
+    overflow: auto;
+}
+
+.footer, .footer a{
+    color: #999;
+    font-size: 0.9rem;
+}
+
+.footer p{
+    margin-bottom: 1.5rem;
+}
+
+.footer .footer-cols{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+}
+
+.footer li{
+    line-height: 1.9rem;
+}
+
+@media (max-width: 960px){
+    .showcase{
+        height: 70vh;
+    }
+
+    .hide-sm{
+        display: none;
+    }
+
+    .showcase-top img{
+        top: 30%;
+        left: 5%;
+        transform: translate(0);
+    }
+
+    .showcase-content h1{
+        font-size: 3.7rem;
+        line-height: 1;
+    }
+
+    .showcase-content p{
+        font-size: 1.5rem;
+    }
+
+    .btn-xl{
+        font-size: 1.5rem;
+        padding: 1.4rem 2rem;
+    }
+
+    .text-xl{
+        font-size: 1.5rem;
+    }
+
+    .text-lg{
+        font-size: 1.3rem;
+    }
+
+
+    .footer .footer-cols {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 700px) {
+    @media (max-width: 700px) {
+	.showcase::after {
+		background: rgba(0, 0, 0, 0.6);
+		box-shadow: inset 80px 80px 150px #000000, inset -80px -80px 150px #000000;
+	}
+
+	.showcase-content h1 {
+		font-size: 2.5rem;
+		line-height: 1;
+	}
+
+	.showcase-content p {
+		font-size: 1rem;
+	}
+
+	#tab-1-content .tab-1-content-inner {
+		grid-template-columns: 1fr;
+		text-align: center;
+	}
+
+	#tab-2-content .tab-2-content-top {
+		display: block;
+		text-align: center;
+	}
+
+	#tab-2-content .tab-2-content-bottom {
+		margin-top: 2rem;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 2rem;
+		text-align: center;
+	}
+
+	.btn-xl {
+		font-size: 1rem;
+		padding: 1.2rem 1.6rem;
+		text-transform: uppercase;
+	}
+}
+}
 
 
