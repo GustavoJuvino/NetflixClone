@@ -9,6 +9,7 @@ The purpose of this project is for me to train my knowledge in HTML, CSS, JS and
 
 
 <img src = "./Imgs2/netflixclone.gif" title="img1"></img>
+
 <img src ="./Imgs2/NetflixClone1.png" title="img2"></img>
 <img src ="./Imgs2/NetflixClone2.png" title="img3"></img>
 <img src ="./Imgs2/NetflixClone3.png" title="img4"></img>
