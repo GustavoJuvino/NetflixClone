@@ -42,7 +42,8 @@ img{
     width: 100%;
     height: 90vh;
     position: relative;
-    background: url("https://i.ibb.co/vXqDmnh/background.jpg");
+    background: url("./Imgs/background.jpg");
+    background-repeat: no-repeat
 }
 
 .showcase::after{
