@@ -7,6 +7,9 @@ Hey guys, this is a project that i learned to develop through a youtube video pu
 The purpose of this project for me is to train my knowledge in HTML, CSS, JS and some puglins with JQUERY.
 </p>
 
+<h4 align="center">
+<a href="https://gustavojuvino.github.io/NetflixClone/">Netflix Clone Website</a></h4>
+
 
 <img src = "./Imgs2/netflixclone.gif" title="img1"></img>
 
